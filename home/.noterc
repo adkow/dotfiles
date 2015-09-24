@@ -1,0 +1,8 @@
+[ui]
+colors=yes
+locale=pl_PL
+reldates=yes
+
+[data]
+data_path=~/.notes/
+no_tempfile=True
