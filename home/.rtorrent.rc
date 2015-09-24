@@ -1,0 +1,19 @@
+#download_rate = 0
+#upload_rate = 0
+
+directory = ~/Pobrane
+session = ~/Pobrane/.session
+
+schedule = watch_directory,5,5,load_start=~/Pobrane/*.torrent
+schedule = tied_directory,5,5,start_tied=
+schedule = untied_directory,5,5,close_untied=
+schedule = low_diskspace,5,60,close_low_diskspace=100M
+
+check_hash = yes
+encryption = allow_incoming,try_outgoing,enable_retry
+peer_exchange = yes
+port_range = 49164-49164
+dht = auto
+dht_port = 6881
+
+system.method.set_key = event.download.finished,move_complete,"execute=mv,-u,$d.get_base_path=,~/Pobrane/;d.set_directory=~/Pobrane/"
