@@ -1,0 +1,37 @@
+directory:  ~/Muzyka
+library:    ~/.config/beets/library.db
+
+import:
+    move:           yes
+    incremental:    yes
+    timid:          yes
+
+paths:
+    default: $albumartist/$albumartist - $album ($year)/$track. $albumartist - $title
+
+plugins: check fetchart ftintitle info mbsync mpdupdate scrub zero
+
+check:
+    import: yes
+
+ftintitle:
+    format: (feat. {0})
+
+mpd:
+    host: localhost
+    port: 6600
+
+scrub:
+    auto: yes
+
+zero:
+    fields: >
+        acoustid_fingerprint acoustid_id
+        albumartist_credit albumartist_sort
+        albumdisambig albumstatus
+        artist_credit artist_sort
+        asin bpm genre language lyrics script
+        comments comp encoder grouping initial_key
+        mb_albumartistid mb_albumid mb_artistid mb_releasegroupid mb_trackid
+        rg_album_gain rg_album_peak rg_track_gain rg_track_peak
+        images
