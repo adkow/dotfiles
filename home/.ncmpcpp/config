@@ -1,0 +1,108 @@
+# general settings
+mpd_music_dir = ~/Muzyka
+ncmpcpp_directory = ~/.ncmpcpp
+
+# MPD connection
+mpd_host = localhost
+mpd_port = 6600
+mpd_connection_timeout = 5
+mpd_crossfade_time = 3
+
+# current playlist
+playlist_display_mode = "columns" (classic/columns)
+playlist_disable_highlight_delay = 3
+playlist_separate_albums = no
+song_list_format = "$1{%A}$9 $5{%t}$9 $R$7{%b}$9 $7{(%y)}$9 $8{%l}$9"
+song_columns_list_format = "(24)[magenta]{A} (47)[yellow]{t} (27)[red]{b} (6f)[white]{lr:Length}"
+now_playing_prefix = $b
+now_playing_suffix = $/b
+
+# browser
+browser_display_mode = "columns"
+browser_sort_mode = format
+browser_sort_format = {%a}{%y}{%b}{%n}{%t}|{%f}
+browser_playlist_prefix = "$3playlist$9 "
+
+# database search
+search_engine_display_mode = "columns"
+default_find_mode = wrapped
+
+# library
+song_library_format = {%t}|{%f}
+media_library_primary_tag = album_artist
+
+# playlist editor
+playlist_editor_display_mode = "columns"
+
+# tag editor
+tag_editor_album_format = "{%b} {(%y)}"
+modified_item_prefix = "$3*$9"
+
+# visualizer
+visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_output_name = "FIFO"
+visualizer_sync_interval = 30
+visualizer_in_stereo = yes
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "●│"
+
+# interface
+user_interface = "classic"
+progressbar_look = "·· "
+progressbar_boldness = yes
+song_status_format = "$b{$1%a$9} $1|$9 {$5%t$9} $1|$9 {$7%b $1|$9 %y$9}$/b"
+song_window_title_format = "{%a - }{%t}|{%f}"
+statusbar_visibility = yes
+header_visibility = yes
+enable_window_title = yes
+display_bitrate = yes
+titles_visibility = no
+autocenter_mode = no
+cyclic_scrolling = no
+message_delay_time = 3
+alternative_header_first_line_format = "$b{$1%a$9 - $5%t$9}$/b"
+alternative_header_second_line_format = "$b{$7%b (%y)$9}$/b"
+selected_item_prefix = $3
+selected_item_suffix = $9
+
+# colors
+colors_enabled = yes
+color1 = yellow
+color2 = magenta
+main_window_color = yellow
+main_window_highlight_color = red
+active_column_color = magenta
+active_window_border = yellow
+header_window_color = black
+window_border_color = magenta
+volume_color = yellow
+progressbar_color = yellow
+statusbar_color = yellow
+empty_tag_color = green
+visualizer_color = yellow
+state_line_color = red
+state_flags_color = white
+discard_colors_if_item_is_selected = yes
+
+# lyrics
+lyrics_directory = ~/.ncmpcpp/lyrics
+follow_now_playing_lyrics = yes
+
+# various
+startup_screen = playlist
+jump_to_now_playing_song_at_start = yes
+seek_time = 1
+incremental_seeking = yes
+volume_change_step = 2
+empty_tag_marker = (empty)
+tags_separator = " | "
+tag_editor_extended_numeration = yes
+external_editor = nano
+use_console_editor = yes
+mouse_support = yes
+data_fetching_delay = yes
+default_space_mode = select
+clock_display_seconds = no
+
+# screen switcher
+screen_switcher_mode = playlist, browser, playlist_editor, visualizer
