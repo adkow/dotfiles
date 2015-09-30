@@ -1,39 +1,38 @@
 ! special
-*.foreground:   #c2b9a1
-*.background:   #1c1709
-*.cursorColor:  #c2b9a1
+*.foreground:   #666699
+*.background:   #000000
 
 ! black
-*.color0:       #1c1709
-*.color8:       #4f4939
+*.color0:       #333366
+*.color8:       #333399
 
 ! red
-*.color1:       #8e4317
-*.color9:       #f07935
+*.color1:       #6666CC
+*.color9:       #9999FF
 
 ! green
-*.color2:       #787200
-*.color10:      #d9d138
+*.color2:       #0099CC
+*.color10:      #00CCFF
 
 ! yellow
-*.color3:       #945c00
-*.color11:      #ffab26
+*.color3:       #3366CC
+*.color11:      #6699FF
 
 ! blue
-*.color4:       #315094
-*.color12:      #8aa9ed
+*.color4:       #006699
+*.color12:      #0099CC
 
 ! magenta
-*.color5:       #5c2e40
-*.color13:      #ff8cb8
+*.color5:       #0066FF
+*.color13:      #0099FF
 
 ! cyan
-*.color6:       #00617d
-*.color14:      #43bfe0
+*.color6:       #669999
+*.color14:      #66CCCC
 
 ! white
-*.color7:       #c2b9a1
-*.color15:      #f2e8c9
+*.color7:       #99CCCC
+*.color15:      #CCFFFF
 
 ! urxvt
 URxvt.cursorBlink:      1
