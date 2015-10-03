@@ -1,0 +1,12 @@
+set header_cache=~/.cache/mutt
+set imap_keepalive=300
+set imap_check_subscribed
+unset imap_passive
+
+set mail_check=60
+set mbox_type=Maildir
+
+source "~/.mutt/1"
+
+macro index 1 '<sync-mailbox><enter-command> source ~/.mutt/1<enter><change-folder>!<enter>'
+macro index 2 '<sync-mailbox><enter-command> source ~/.mutt/2<enter><change-folder>!<enter>'
