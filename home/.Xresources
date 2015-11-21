@@ -1,45 +1,11 @@
-! special
-*.foreground:   #666699
-*.background:   #000000
+#include "/home/anon/.config/colors/eqie6"
 
-! black
-*.color0:       #333366
-*.color8:       #333399
-
-! red
-*.color1:       #6666CC
-*.color9:       #9999FF
-
-! green
-*.color2:       #0099CC
-*.color10:      #00CCFF
-
-! yellow
-*.color3:       #3366CC
-*.color11:      #6699FF
-
-! blue
-*.color4:       #006699
-*.color12:      #0099CC
-
-! magenta
-*.color5:       #0066FF
-*.color13:      #0099FF
-
-! cyan
-*.color6:       #669999
-*.color14:      #66CCCC
-
-! white
-*.color7:       #99CCCC
-*.color15:      #CCFFFF
-
-! urxvt
+! URxvt
 URxvt.cursorBlink:      1
 URxvt.cursorUnderline:  1
-URxvt*scrollBar:        false
-URxvt*font:             xft:Inconsolata\\-g for Powerline:style:g:pixelsize=12
-URxvt*letterSpace:      -1
+URxvt.scrollBar:        false
+URxvt.font:             xft:Inconsolata\\-g for Powerline:style:g:pixelsize=12
+URxvt.letterSpace:      -1
 
 ! disable Perl extensions
 URxvt.perl-ext:
