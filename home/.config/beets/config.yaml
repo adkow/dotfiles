@@ -9,7 +9,8 @@ import:
 paths:
     default: $albumartist/$albumartist - $album ($year)/$track. $albumartist - $title
 
-plugins: check fetchart ftintitle info mbsync mpdupdate scrub zero
+#plugins: check fetchart ftintitle info mbsync mpdupdate scrub zero
+plugins: fetchart ftintitle info mbsync mpdupdate scrub zero
 
 check:
     import: yes

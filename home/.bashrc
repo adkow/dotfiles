@@ -11,7 +11,7 @@ alias myip='wget -qO- "http://wtfismyip.com/text"'
 alias rndm='wget -qO- "https://www.random.org/integers/?num=1&min=1&max=10&col=1&base=10&format=plain&rnd=new"'
 alias in='task add +inbox'
 
-eval "$(thefuck --alias)"
+#eval "$(thefuck --alias)"
 eval "$(beet completion)"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
